@@ -6,12 +6,13 @@
 .header{
     min-height: 100vh;
     width: 100%;
+    display: block;
+    position: relative;
     
     background-image: linear-gradient(rgba(218, 206, 207, 0.7), rgba(40, 52, 6, 0.7)), url(https://img.freepik.com/premium-vector/doodle-asian-japanese-cuisine-traditional-delicious-food-chinese-korean-japanese-rice-noodles-fish-meat-dishes-vector-illustration-set-oriental-cuisine-food_229548-2025.jpg?w=2000);
 
     background-position: center;
-    background-size: cover;
-    position: fixed;
+    
 }
 
 nav{
@@ -89,17 +90,6 @@ nav .fa{
         margin: 10%;
     } 
 
-    .smol{
-        display: flex;
-        flex-direction: column;
-        margin: 5%;
-        font-size: 20px;
-    }
-
-    .nav-links ul li{
-        display: block;
-    }
-
     .nav-links{
         position: absolute;
         background-image: linear-gradient(rgb(217, 171, 171), #fff);
@@ -124,5 +114,195 @@ nav .fa{
 
     .nav-links ul{
         padding: 30px;
+    }
+
+    .smol{
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        font-size: 20px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    
+}
+
+/****PART 1****/
+
+.part1{
+    min-height: 100vh;
+    width: 100%;
+
+    display: block;
+
+    overflow: hidden;
+    
+    background-image: url(https://img.freepik.com/free-photo/yellow-watercolor-paper_95678-446.jpg?w=2000);
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.content1{
+    margin: 0;
+    padding: 0;
+}
+
+.content1 h1{
+    margin: 0;
+    padding-top: 8%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 45px;
+}
+
+.content1 p{
+    text-align: center;
+    font-size: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+}
+
+.btn{
+    text-align: center;
+}
+
+.menu-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(12, 1, 1);
+    border: 3px solid rgb(25, 1, 1);
+    border-radius: 20px;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu-btn:hover{
+    border: 3px solid rgb(8, 0, 0);
+    background-color: rgb(8, 0, 0);
+    color: #fff;
+    transition: 1s;
+}
+
+@media(max-width: 700px){
+    .content1 h1{
+        font-size: 35px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .content1 p{
+        font-size: 25px;
+        margin-bottom: 2%;
+    }
+
+    .btn{
+        margin-top: 5%;
+    }
+}
+
+/****PART 2****/
+
+.part2{
+    min-height: 100vh;
+    width: 100%;
+    
+    background-image: url(https://i.pinimg.com/originals/cb/3b/4b/cb3b4bbe2d9d495e43283f6658001263.gif);
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/****FOOTER****/
+
+.footer{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: olivedrab;
+}
+
+.socials ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.socials ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.socials ul li a:hover{
+    color: rgb(229, 192, 11);
+    transition: 1s;
+}
+
+.footer-txt{
+    flex: 1;
+    text-align: right;
+}
+
+.footer-txt ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.footer-txt ul li a{
+    color: rgb(1, 23, 16);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-txt ul li a:hover{
+    color: rgb(229, 192, 11);
+    transition: 1s;
+}
+
+.footer-txt .btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(12, 1, 1);
+    border: 3px solid rgb(25, 1, 1);
+    padding: 5px 20px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer-txt .btn2:hover{
+    border: 3px solid rgb(8, 0, 0);
+    background-color: rgb(229, 192, 11);
+    color: rgb(12, 1, 1);
+    transition: 1s;
+}
+
+@media(max-width: 700px){
+    .socials ul li{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer-txt ul li{
+        display: flex;
+        align-items: flex-start;
+        justify-content: right;
     }
 }
