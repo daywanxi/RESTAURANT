@@ -12,6 +12,7 @@
     background-image: linear-gradient(rgba(218, 206, 207, 0.7), rgba(40, 52, 6, 0.7)), url(https://img.freepik.com/premium-vector/doodle-asian-japanese-cuisine-traditional-delicious-food-chinese-korean-japanese-rice-noodles-fish-meat-dishes-vector-illustration-set-oriental-cuisine-food_229548-2025.jpg?w=2000);
 
     background-position: center;
+    overflow: hidden;
     
 }
 
